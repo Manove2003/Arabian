@@ -1,0 +1,122 @@
+/* About Us Section */
+.about-us {
+  padding: 60px 4%;
+  background-color: #fff;
+}
+
+.about-us__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us__head1 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-us__title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.about-us__content {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+/* Image Section */
+.about-us__image-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us__image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Section */
+.about-us__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.about-us__text h2 {
+  font-size: 28px;
+}
+
+.about-us__text p {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.about-us__button {
+  padding: 12px 30px;
+  background-color: #ff6a3d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+/* Button Hover Effect */
+.about-us__button:hover {
+  background-color: #e45a32;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-us__content {
+    flex-direction: column;
+  }
+
+  .about-us__text,
+  .about-us__image-wrapper {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-us__button {
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us__title {
+    font-size: 24px;
+  }
+
+  .about-us__text h2 {
+    font-size: 20px;
+  }
+
+  .about-us__text p {
+    font-size: 14px;
+  }
+
+  .about-us__button {
+    font-size: 14px;
+  }
+}

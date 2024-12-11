@@ -1,0 +1,156 @@
+.brands-container {
+  text-align: center;
+  background-color: #1d2939;
+  color: white;
+  padding: 20px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.brands-slider-wrapper {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center the slider and button */
+  gap: 16px; /* Space between slider and button */
+  margin-top: 20px;
+  width: 100%;
+}
+
+.brands-slider {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  flex: 1; /* Allow the slider to take up remaining space */
+}
+
+.brand-item {
+  flex: 0 0 20%; /* Take 20% of the width per item */
+  max-width: 20%;
+  text-align: center;
+}
+
+.brand-circle {
+  background: white;
+  border-radius: 50%;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%; /* Keep image inside the circle */
+}
+
+.next-button {
+  background-color: orange;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-button svg {
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .brand-item {
+    flex: 0 0 25%; /* 4 items per row on larger screens */
+    max-width: 25%;
+  }
+
+  .brand-circle {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-item {
+    flex: 0 0 40%; /* 2 items per row on tablets */
+    max-width: 40%;
+  }
+
+  .brand-circle {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brands-slider-wrapper {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .brand-item {
+    flex: 0 0 100%; /* 1 item per row on small screens */
+    max-width: 100%;
+  }
+
+  .brand-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .next-button {
+    padding: 6px;
+    margin-top: 16px;
+  }
+}
+.brands-slider-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center the content */
+  gap: 16px; /* Space between items */
+  margin-top: 20px;
+}
+
+.brands-slider {
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping inside the slider */
+  gap: 16px;
+  justify-content: center; /* Center the slider content */
+}
+.brand-item {
+  flex: 0 0 calc(25% - 16px); /* Adjust width dynamically */
+  max-width: calc(25% - 16px); /* 4 items per row on larger screens */
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .brand-item {
+    flex: 0 0 calc(33.33% - 16px); /* 3 items per row on medium screens */
+    max-width: calc(33.33% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-item {
+    flex: 0 0 calc(50% - 16px); /* 2 items per row on smaller screens */
+    max-width: calc(50% - 16px);
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-item {
+    flex: 0 0 100%; /* 1 item per row on very small screens */
+    max-width: 100%;
+  }
+}
